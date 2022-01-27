@@ -361,7 +361,7 @@ def help_button(update, context):
 
 def emiko_about_callback(update, context):
     query = update.callback_query
-    if query.data == "emiko_":
+    if query.data == "wiki_":
         query.message.edit_text(
             text="๏ I'm *Muscat*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
@@ -425,7 +425,7 @@ def emiko_about_callback(update, context):
             ),
         )
 
-    elif query.data == "emiko_notes":
+    elif query.data == "wiki_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"

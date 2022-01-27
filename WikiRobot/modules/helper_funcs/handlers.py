@@ -1,6 +1,6 @@
-import EmikoRobot.modules.sql.blacklistusers_sql as sql
-from EmikoRobot import ALLOW_EXCL
-from EmikoRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import WikiRobot.modules.sql.blacklistusers_sql as sql
+from WikiRobot import ALLOW_EXCL
+from WikiRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
@@ -88,7 +88,7 @@ class CustomCommandHandler(CommandHandler):
                     args = message.text.split()[1:]
                     command = fst_word[1:].split("@")
                     command.append(message.bot.username)
-                    if user_id == 1087968824:
+                    if user_id == 2133434438:
                         user_id = update.effective_chat.id
                     if not (
                         command[0].lower() in self.command

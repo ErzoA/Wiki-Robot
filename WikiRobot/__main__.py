@@ -358,26 +358,6 @@ def help_button(update, context):
     except BadRequest:
         pass
 
-    elif query.data == "wiki_music":
-        query.message.edit_text(
-            text="*๏Perintah Bot Music+Streaming*"
-            "\nKlik di bawah ini untuk lebih jelas perintah Bot Music+Streaming.",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="CD Music", url="https://t.me/WikiTapiChannel/138"),
-                    InlineKeyboardButton(text="CD Dev", url="https://t.me/WikiTapiChannel/139"),
-                    InlineKeyboardButton(text="CD Stream", url="https://t.me/WikiTapiChannel/140"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="wiki_"),
-                 
-                 ]
-                ]
-            ),
-        )
-
 def wiki_about_callback(update, context):
     query = update.callback_query
     if query.data == "wiki_":
@@ -412,6 +392,29 @@ def wiki_about_callback(update, context):
                 ]
             ),
         )
+
+    elif query.data == "wiki_music":
+        query.message.edit_text(
+            text="*๏Perintah Bot Music+Streaming*"
+            "\nKlik di bawah ini untuk lebih jelas perintah Bot Music+Streaming."
+            disable_web_page_preview=True,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="CD Music", url="https://t.me/WikiTapiChannel/138"),
+                    InlineKeyboardButton(text="CD Dev", url="https://t.me/WikiTapiChannel/139"),
+                    InlineKeyboardButton(text="CD Stream", url="https://t.me/WikiTapiChannel/140"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="wiki_"),
+                 
+                 ]
+                ]
+            ),
+        )
+
+
     elif query.data == "wiki_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))

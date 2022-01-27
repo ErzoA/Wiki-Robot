@@ -82,27 +82,30 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+✪ Saya Adalah Bot Music+Manager.
+✪ Bot Music, Bisa Memutar Music dan Streaming Di Obrolan Suara Group.
+✪ Bot Manager, Memperindah Tampilan Group atau Hanya Berbuat Beramin-main [😑](https://telegra.ph/file/b908dc3669562895e8afa.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
-✪ Hit /help to see my available commands.
+✪ Tekan /help untuk melihat perintah saya yang tersedia.
 """
 
 buttons = [
-    [
-        InlineKeyboardButton(text="About wiki Robot", callback_data="wiki_"),
+    [   
+       InlineKeyboardButton(text="My Darling", url="t.me/WikiTapiOrang"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
-        ),
+        InlineKeyboardButton(text="Music Help", callback_data="Wiki_music"),
+    ],
+    [   
+       InlineKeyboardButton(text="About Muscat", callback_data="Wiki_"),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add wiki To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="➗ Tambahkan Saya Ke Group ➗", url="t.me/MuscatXBot?startgroup=new"),
     ],
 ]
 
@@ -110,10 +113,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/5ff1cb39902809148f07f.jpg"
+WIKI_IMG = "https://telegra.ph/file/b908dc3669562895e8afa.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @excrybaby \
+ You can support the project by contacting @WikiTapiOrang \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -229,7 +232,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
+            f"👋 Hi Darling, I'm {dispatcher.bot.first_name}. Nice to meet You.",
             parse_mode=ParseMode.HTML
        )
 
@@ -360,7 +363,7 @@ def wiki_about_callback(update, context):
     query = update.callback_query
     if query.data == "wiki_":
         query.message.edit_text(
-            text="๏ I'm *wiki*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Muscat*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -368,7 +371,7 @@ def wiki_about_callback(update, context):
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
             "\n\n_wiki's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for WikiRobot.",
+            "\n\n Click on button bellow to get basic help for Muscat.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -382,7 +385,7 @@ def wiki_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="wiki_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/WikiRobot"),
+                    InlineKeyboardButton(text="Source Code", url="https://Nekopoi.care"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="wiki_back"),
@@ -390,6 +393,25 @@ def wiki_about_callback(update, context):
                 ]
             ),
         )
+    if query.data == "Wiki_music":
+        query.message.edit_text(
+            text="๏ Saya *Muscat*, Bot Music+Streaming Di Obrolan Suara Group."
+            "\n• Di bawah ini perintah Bot Music+Streaming.",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="CD Music", url="https://t.me/WikiTapiChannel/138"),
+                    InlineKeyboardButton(text="CD Dev", url="https://t.me/WikiTapiChannel/139"),
+                    InlineKeyboardButton(text="CD Stream", url="https://t.me/WikiTapiChannel/140"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_back"),
+                 ]
+                ]
+            ),
+        )
+
     elif query.data == "wiki_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
@@ -408,7 +430,7 @@ def wiki_about_callback(update, context):
     elif query.data == "wiki_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, WikiRobot now ready to manage your group."
+            "\nCongragulations, Muscat now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -441,8 +463,8 @@ def wiki_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/wikisupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/WikiProjects"),
+                    InlineKeyboardButton(text="Support", url="t.me/WikiTapiGroup"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/WikiTapiChannel"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="wiki_"),
@@ -460,6 +482,8 @@ def wiki_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
+                 [
+                    InlineKeyboardButton(text="Wiki W", url="https://github.com/Wiki28"),
                  [
                     InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
                     InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
@@ -798,7 +822,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
+                "👋 Hi Darling, i'm alive.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:

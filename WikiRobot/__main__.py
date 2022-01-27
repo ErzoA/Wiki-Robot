@@ -84,7 +84,7 @@ PM_START_TEXT = """
 *Hello {} !*
 ✪ Saya Adalah Bot Music+Manager.
 ✪ Bot Music, Bisa Memutar Music dan Streaming Di Obrolan Suara Group.
-✪ Bot Manager, Memperindah Tampilan Group atau Hanya Berbuat Beramin-main [😑](https://telegra.ph/file/9b9a27cd02e65046d5515.jpg)
+✪ Bot Manager, Memperindah Tampilan Group atau Hanya Berbuat Beramin-main [😑](https://telegra.ph/file/b908dc3669562895e8afa.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -98,17 +98,16 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
-        InlineKeyboardButton(text="About Muscat", callback_data="Wiki_"),
+        InlineKeyboardButton(text="Music Help", callback_data="Wiki_music"),
     ],
     [   
-       InlineKeyboardButton(text="Help Music", callback_data="Wiki_music"),
+       InlineKeyboardButton(text="About Muscat", callback_data="Wiki_"),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Tambahkan Saya Ke Group ➗", url="t.me/WikiTapiBot?startgroup=new"),
+            text="➗ Tambahkan Saya Ke Group ➗", url="t.me/MuscatXBot?startgroup=new"),
     ],
 ]
-
 
 HELP_STRINGS = """
 Klik tombol di bawah ini untuk mendapatkan deskripsi tentang perintah spesifik."""
@@ -464,8 +463,8 @@ def Wiki_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/Wikisupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Support", url="t.me/WikiTapiGroup"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/WikiTapiChannel"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="Wiki_"),
@@ -510,31 +509,6 @@ def Wiki_about_callback(update, context):
             ),
         )
 
-def Source_about_callback(update, context):
-    query = update.callback_query
-    if query.data == "source_":
-        query.message.edit_text(
-            text="๏›› This advance command for Musicplayer."
-            "\n\n๏ Command for admins only."
-            "\n • `/reload` - For refreshing the adminlist."
-            "\n • `/pause` - To pause the playback."
-            "\n • `/resume` - To resuming the playback You've paused."
-            "\n • `/skip` - To skipping the player."
-            "\n • `/end` - For end the playback."
-            "\n • `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
-            "\n\n๏ Command for all members."
-            "\n • `/play` <query /reply audio> - Playing music via YouTube."
-            "\n • `/playlist` - To playing a playlist of groups or your personal playlist",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_")
-                 ]
-                ]
-            ),
-        )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
@@ -821,7 +795,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, Wiki Ganteng Is Back.",
+                "👋 Hi Darling, I Am Alive.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:

@@ -396,7 +396,7 @@ def wiki_about_callback(update, context):
     if query.data == "Wiki_music":
         query.message.edit_text(
             text="๏ Saya *Muscat*, Bot Music+Streaming Di Obrolan Suara Group."
-            "\n• Di bawah ini perintah Bot Music+Streaming."
+            "\n• Di bawah ini perintah Bot Music+Streaming.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [

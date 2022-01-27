@@ -436,9 +436,9 @@ def emiko_about_callback(update, context):
                 [[InlineKeyboardButton(text="Go Back", callback_data="wiki_")]]
             ),
         )
-    elif query.data == "emiko_support":
+    elif query.data == "wiki_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
+            text="*๏ Muscat support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Muscat.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -455,10 +455,29 @@ def emiko_about_callback(update, context):
             ),
         )
 
+    elif query.data == "wiki_music":
+        query.message.edit_text(
+            text="*๏Perintah Bot Music+Streaming*"
+            "\nKlik di bawah ini untuk lebih jelas perintah Bot Music+Streaming.",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="CD Music", url="https://t.me/WikiTapiChannel/138"),
+                    InlineKeyboardButton(text="CD Dev", url="https://t.me/WikiTapiChannel/139"),
+                    InlineKeyboardButton(text="CD Stream", url="https://t.me/WikiTapiChannel/140"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="wiki_"),
+                 
+                 ]
+                ]
+            ),
+        )
 
     elif query.data == "wiki_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Emiko\n"
+            text=f"๏ Credis for Muscat\n"
             "\nHere Developers Making And Give Inspiration For Made The Muscat",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(

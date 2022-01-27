@@ -396,9 +396,9 @@ def wiki_about_callback(update, context):
     elif query.data == "wiki_music":
         query.message.edit_text(
             text="*๏Perintah Bot Music+Streaming*"
-            "\nKlik di bawah ini untuk lebih jelas perintah Bot Music+Streaming."
-            disable_web_page_preview=True,
+            "\nKlik di bawah ini untuk lebih jelas perintah Bot Music+Streaming.",
             parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -408,7 +408,6 @@ def wiki_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="wiki_"),
-                 
                  ]
                 ]
             ),

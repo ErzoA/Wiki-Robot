@@ -98,10 +98,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
-        InlineKeyboardButton(text="Music Help​​", callback_data="wiki_music"),
+        InlineKeyboardButton(text="Music Help​​", callback_data="Wiki_music"),
     ],
     [
-        InlineKeyboardButton(text="About Muscat", callback_data="wiki_"),
+        InlineKeyboardButton(text="About Muscat", callback_data="Wiki_"),
     ],
     [
         InlineKeyboardButton(
@@ -358,9 +358,9 @@ def help_button(update, context):
     except BadRequest:
         pass
 
-def wiki_about_callback(update, context):
+def Wiki_about_callback(update, context):
     query = update.callback_query
-    if query.data == "wiki_":
+    if query.data == "Wiki_":
         query.message.edit_text(
             text="๏ I'm *Muscat*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
@@ -376,24 +376,24 @@ def wiki_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="wiki_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="wiki_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="Wiki_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="Wiki_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="wiki_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="wiki_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="Wiki_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="Wiki_credit"),
                  ],
                  [
                     InlineKeyboardButton(text="Source Code", url="https://Nekopoi.care"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="wiki_back"),
+                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_back"),
                  ]
                 ]
             ),
         )
 
-    elif query.data == "wiki_music":
+    elif query.data == "Wiki_music":
         query.message.edit_text(
             text="*๏Perintah Bot Music+Streaming*"
             "\nKlik di bawah ini untuk lebih jelas perintah Bot Music+Streaming.",
@@ -407,14 +407,14 @@ def wiki_about_callback(update, context):
                     InlineKeyboardButton(text="CD Stream", url="https://t.me/WikiTapiChannel/140"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="wiki_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_"),
                  ]
                 ]
             ),
         )
 
 
-    elif query.data == "wiki_back":
+    elif query.data == "Wiki_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -429,10 +429,10 @@ def wiki_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "wiki_admin":
+    elif query.data == "Wiki_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, EmikoRobot now ready to manage your group."
+            "\nCongragulations, WikiRobot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -442,11 +442,11 @@ def wiki_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="wiki_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="Wiki_")]]
             ),
         )
 
-    elif query.data == "wiki_notes":
+    elif query.data == "Wiki_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -454,10 +454,10 @@ def wiki_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="wiki_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="Wiki_")]]
             ),
         )
-    elif query.data == "wiki_support":
+    elif query.data == "Wiki_support":
         query.message.edit_text(
             text="*๏ Muscat support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Muscat.",
@@ -469,14 +469,14 @@ def wiki_about_callback(update, context):
                     InlineKeyboardButton(text="Updates", url="https://t.me/WikiTapiChannel"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="wiki_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_"),
                  
                  ]
                 ]
             ),
         )
 
-    elif query.data == "wiki_credit":
+    elif query.data == "Wiki_credit":
         query.message.edit_text(
             text=f"๏ Credis for Muscat\n"
             "\nHere Developers Making And Give Inspiration For Made The Muscat",
@@ -504,7 +504,7 @@ def wiki_about_callback(update, context):
                     InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="wiki_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_"),
                  ]
                 ]
             ),
@@ -530,7 +530,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="wiki_")
+                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_")
                  ]
                 ]
             ),
@@ -845,7 +845,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        emiko_about_callback, pattern=r"emiko_", run_async=True
+        Wiki_about_callback, pattern=r"Wiki_", run_async=True
     )
 
     source_callback_handler = CallbackQueryHandler(

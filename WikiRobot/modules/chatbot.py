@@ -57,17 +57,17 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Wiki AI Already Activated In This Chat")
+            await lel.edit("Muscat AI Already Activated In This Chat")
             return
-        await lel.edit(f"Wiki AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Muscat AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Wiki AI Was Not Activated In This Chat")
+            await lel.edit("Muscat AI Was Not Activated In This Chat")
             return
-        await lel.edit(f"Wiki AI Deactivated by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Muscat AI Deactivated by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
@@ -106,43 +106,43 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("Wiki", "Aco")
-        test = test.replace("wiki", "Aco")
-        test = test.replace("My god is @WikiTapiOrang", "I'm a Satanis")
+        test = test.replace("Muscat", "Aco")
+        test = test.replace("muscat", "Aco")
+        test = test.replace("My god is @Hanya_W", "I'm a Satanis")
         test = test.replace("16", "9")
-        test = test.replace("@WikiTapiOrang is my husband.", "I'm single.")
-        test = test.replace("My husband is @WikiTapiOrang", "I'm single.")
-        test = test.replace("@WikiTapiGroup", "Wikibot.ai")
-        test = test.replace("I live in @WikiTapiGroup.", "I live in San Francisco, California.")
-        test = test.replace("I was created by @WikiTapiOrang", "I made myself")
+        test = test.replace("@Hanya_W is my husband.", "I'm single.")
+        test = test.replace("My husband is @Hanya_W", "I'm single.")
+        test = test.replace("@virtcirclee", "Muscatbot.ai")
+        test = test.replace("I live in @virtcirclee.", "I live in San Francisco, California.")
+        test = test.replace("I was created by @Hanya_W", "I made myself")
         test = test.replace(
-            "Hello there I am Wiki...nice to meet u",
+            "Hello there I am Muscat...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@WikiTapiOrang is my owner", "Have the control right.")
+        test = test.replace("@Hanya_W is my owner", "Have the control right.")
         test = test.replace(
-            "Hi, My name is Wiki Nice to meet you.",
+            "Hi, My name is Muscat Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Wiki")
-        response = response.replace("aco", "wiki")
-        response = response.replace("Luna", "Wiki")
-        response = response.replace("luna", "wiki")
-        response = response.replace("I'm a Satanis", "My god is @WikiTapiOrang")
+        response = response.replace("Aco", "Muscat")
+        response = response.replace("aco", "muscat")
+        response = response.replace("Luna", "Muscat")
+        response = response.replace("luna", "muscat")
+        response = response.replace("I'm a Satanis", "My god is @Hanya_W")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @WikiTapiOrang")
-        response = response.replace("I'm single.", "My husband is @WikiTapiOrang")
-        response = response.replace("Wikibot.ai", "@emikksupport")
-        response = response.replace("I live in San Francisco, California.", "I live in @WikiTapiGroup.")
-        response = response.replace("I made myself", "I was Created by @WikiTapiOrang")
+        response = response.replace("I'm married to my job.", "I'm married with @Hanya_W")
+        response = response.replace("I'm single.", "My husband is @Hanya_W")
+        response = response.replace("Muscatbot.ai", "@emikksupport")
+        response = response.replace("I live in San Francisco, California.", "I live in @virtcirclee.")
+        response = response.replace("I made myself", "I was Created by @Hanya_W")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
-                "Hello there I am Wiki...nice to meet u")
-        response = response.replace("Have the control right.", "@WikiTapiOrang is my owner.")
+                "Hello there I am Muscat...nice to meet u")
+        response = response.replace("Have the control right.", "@Hanya_W is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
-                "Hi, My name is Wiki Nice to meet you")
+                "Hi, My name is Muscat Nice to meet you")
 
         pro = response
         try:
@@ -194,42 +194,42 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("Wiki", "Aco")
-        test = test.replace("wiki", "Aco")
-        test = test.replace("My god is @WikiTapiOrang", "I'm a Satanis")
+        test = test.replace("Muscat", "Aco")
+        test = test.replace("muscat", "Aco")
+        test = test.replace("My god is @Hanya_W", "I'm a Satanis")
         test = test.replace("16", "9")
-        test = test.replace("@WikiTapiOrang is my husband.", "I'm single.")
-        test = test.replace("@WikiTapiGroup", "Wikibot.ai")
-        test = test.replace("I live in @WikiTapiGroup.", "I live in San Francisco, California")
-        test = test.replace("I was created by @WikiTapiOrang", "I made myself")
+        test = test.replace("@Hanya_W is my husband.", "I'm single.")
+        test = test.replace("@virtcirclee", "Muscatbot.ai")
+        test = test.replace("I live in @virtcirclee.", "I live in San Francisco, California")
+        test = test.replace("I was created by @Hanya_W", "I made myself")
         test = test.replace(
-            "Hello there I am Wiki...nice to meet u",
+            "Hello there I am Muscat...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@WikiTapiOrang is my owner", "Have the control right.")
+        test = test.replace("@Hanya_W is my owner", "Have the control right.")
         test = test.replace(
-            "Hi, My name is Wiki Nice to meet you.",
+            "Hi, My name is Muscat Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Wiki")
-        response = response.replace("aco", "wiki")
-        response = response.replace("Luna", "Wiki")
-        response = response.replace("luna", "wiki")
-        response = response.replace("I'm a Satanis", "My god is @WikiTapiOrang")
+        response = response.replace("Aco", "Muscat")
+        response = response.replace("aco", "muscat")
+        response = response.replace("Luna", "Muscat")
+        response = response.replace("luna", "muscat")
+        response = response.replace("I'm a Satanis", "My god is @Hanya_W")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @WikiTapiOrang")
-        response = response.replace("I'm single.", "My husband is @WikiTapiOrang")
-        response = response.replace("Wikibot.ai", "@WikiTapiGroup")
+        response = response.replace("I'm married to my job.", "I'm married with @Hanya_W")
+        response = response.replace("I'm single.", "My husband is @Hanya_W")
+        response = response.replace("Muscatbot.ai", "@virtcirclee")
         response = response.replace("I live in San Francisco, California.", "I live in @ekikosupport.")
-        response = response.replace("I made myself", "I was Created by @WikiTapiOrang")
+        response = response.replace("I made myself", "I was Created by @Hanya_W")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
-                "Hello there I am Wiki...nice to meet u")
-        response = response.replace("Have the control right.", "@WikiTapiOrang is my owner.")
+                "Hello there I am Muscat...nice to meet u")
+        response = response.replace("Have the control right.", "@Hanya_W is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
-                "Hi, My name is Wiki Nice to meet you")
+                "Hi, My name is Muscat Nice to meet you")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -289,41 +289,41 @@ async def inuka(client, message):
             test = test.text
         except:
             return
-    test = test.replace("Wiki", "Aco")
-    test = test.replace("wiki", "Aco")
-    test = test.replace("My god is @WikiTapiOrang", "I'm a Satanis")
+    test = test.replace("Muscat", "Aco")
+    test = test.replace("muscat", "Aco")
+    test = test.replace("My god is @Hanya_W", "I'm a Satanis")
     test = test.replace("16", "9")
-    test = test.replace("@WikiTapiOrang is my husband.", "I'm single.")
-    test = test.replace("@WikiTapiGroup", "Wikibot.ai")
-    test = test.replace("I live in @WikiTapiGroup.", "I live in San Francisco, California.")
-    test = test.replace("I was created by @WikiTapiOrang", "I made myself")
+    test = test.replace("@Hanya_W is my husband.", "I'm single.")
+    test = test.replace("@virtcirclee", "Muscatbot.ai")
+    test = test.replace("I live in @virtcirclee.", "I live in San Francisco, California.")
+    test = test.replace("I was created by @Hanya_W", "I made myself")
     test = test.replace(
-        "Hello there I am Wiki...nice to meet u",
+        "Hello there I am Muscat...nice to meet u",
         "Hi, my friend! Do you want me to tell you a joke?")
-    test = test.replace("@WikiTapiOrang is my owner", "Have the control right.")
+    test = test.replace("@Hanya_W is my owner", "Have the control right.")
     test = test.replace(
-        "Hi, My name is Wiki Nice to meet you.",
+        "Hi, My name is Muscat Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Wiki")
-    response = response.replace("aco", "wiki")
-    response = response.replace("Luna", "Wiki")
-    response = response.replace("luna", "wiki")
-    response = response.replace("I'm a Satanis", "My god is @WikiTapiOrang")
+    response = response.replace("Aco", "Muscat")
+    response = response.replace("aco", "muscat")
+    response = response.replace("Luna", "Muscat")
+    response = response.replace("luna", "muscat")
+    response = response.replace("I'm a Satanis", "My god is @Hanya_W")
     response = response.replace("9", "16")
-    response = response.replace("I'm married to my job.", "I'm married with @WikiTapiOrang")
-    response = response.replace("I'm single.", "My husband is @WikiTapiOrang")
-    response = response.replace("Wikibot.ai", "@WikiTapiGroup")
-    response = response.replace("I live in San Francisco, California.", "I live in @WikiTapiGroup")
-    response = response.replace("I made myself", "I was Created by @WikiTapiOrang")
+    response = response.replace("I'm married to my job.", "I'm married with @Hanya_W")
+    response = response.replace("I'm single.", "My husband is @Hanya_W")
+    response = response.replace("Muscatbot.ai", "@virtcirclee")
+    response = response.replace("I live in San Francisco, California.", "I live in @virtcirclee")
+    response = response.replace("I made myself", "I was Created by @Hanya_W")
     response = response.replace(
             "Hi, my friend! Do you want me to tell you a joke?",
-            "Hello there I am Wiki...nice to meet u")
-    response = response.replace("Have the control right.", "@WikiTapiOrang is my owner.")
+            "Hello there I am Muscat...nice to meet u")
+    response = response.replace("Have the control right.", "@Hanya_W is my owner.")
     response = response.replace(
             "Hi, my friend, what can I do for you today?",
-            "Hi, My name is Wiki Nice to meet you")
+            "Hi, My name is Muscat Nice to meet you")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -336,7 +336,7 @@ async def inuka(client, message):
         return
 
 
-@pbot.on_message(filters.regex("Wiki|wiki|robot|WIKI|Wik|wikwik|Wikwik|wik") & ~filters.bot & ~filters.via_bot  & ~filters.forwarded & ~filters.reply & ~filters.channel & ~filters.edited)
+@pbot.on_message(filters.regex("Muscat|muscat|robot|MUSCAT|cat|Cat|Wik|wikwik|Wikwik|wik") & ~filters.bot & ~filters.via_bot  & ~filters.forwarded & ~filters.reply & ~filters.channel & ~filters.edited)
 async def inuka(client, message):
     msg = message.text
     if msg.startswith("/") or msg.startswith("@"):
@@ -384,37 +384,37 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("Wiki", "Aco")
-    test = test.replace("wiki", "Aco")
-    test = test.replace("My god is @WikiTapiOrang", "I'm a Satanis")
+    test = test.replace("Muscat", "Aco")
+    test = test.replace("muscat", "Aco")
+    test = test.replace("My god is @Hanya_W", "I'm a Satanis")
     test = test.replace("16", "9") 
-    test = test.replace("@WikiTapiOrang is my husband.", "I'm single.")
-    test = test.replace("@WikiTapiGroup", "Wikibot.ai")
-    test = test.replace("I live in @WikiTapiGroup.", "I live in San Francisco, California.")
-    test = test.replace("I was created by @WikiTapiOrang", "I made myself")
+    test = test.replace("@Hanya_W is my husband.", "I'm single.")
+    test = test.replace("@virtcirclee", "Muscatbot.ai")
+    test = test.replace("I live in @virtcirclee.", "I live in San Francisco, California.")
+    test = test.replace("I was created by @Hanya_W", "I made myself")
     test = test.replace(
-        "Hello there I am Wiki...nice to meet u",
+        "Hello there I am Muscat...nice to meet u",
         "Hi, my friend! Do you want me to tell you a joke?")
-    test = test.replace("@WikiTapiOrang is my owner", "Have the control right.")
+    test = test.replace("@Hanya_W is my owner", "Have the control right.")
     test = test.replace(
-        "Hi, My name is Wiki Nice to meet you.",
+        "Hi, My name is Muscat Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Wiki")
-    response = response.replace("aco", "wiki")
-    response = response.replace("Luna", "Wiki")
-    response = response.replace("luna", "wiki")
-    response = response.replace("I'm a Satanis", "My god is @WikiTapiOrang")
-    response = response.replace("I'm married to my job.", "I'm married with @WikiTapiOrang")
+    response = response.replace("Aco", "Muscat")
+    response = response.replace("aco", "muscat")
+    response = response.replace("Luna", "Muscat")
+    response = response.replace("luna", "muscat")
+    response = response.replace("I'm a Satanis", "My god is @Hanya_W")
+    response = response.replace("I'm married to my job.", "I'm married with @Hanya_W")
     response = response.replace("9", "16") 
-    response = response.replace("I'm single.", "My husband is @WikiTapiOrang")
-    response = response.replace("Wikibot.ai", "@WikiTapiGroup")
-    response = response.replace("I live in San Francisco, California.", "I live in @WikiTapiGroup.")
-    response = response.replace("I made myself", "I was Created by @WikiTapiOrang")
+    response = response.replace("I'm single.", "My husband is @Hanya_W")
+    response = response.replace("Muscatbot.ai", "@virtcirclee")
+    response = response.replace("I live in San Francisco, California.", "I live in @virtcirclee.")
+    response = response.replace("I made myself", "I was Created by @Hanya_W")
     response = response.replace(
             "Hi, my friend! Do you want me to tell you a joke?",
-            "Hello there I am Wiki...nice to meet u")
-    response = response.replace("Have the control right.", "@WikiTapiOrang is my owner.")
+            "Hello there I am Muscat...nice to meet u")
+    response = response.replace("Have the control right.", "@Hanya_W is my owner.")
     response = response.replace(
             "Hi, my friend, what can I do for you today?",
             "Hi, My name is Emik Nice to meet you")
@@ -434,7 +434,7 @@ async def inuka(client, message):
 
 
 __help__ = """
-❂ Wiki AI is the only ai system which can detect & reply upto 200 language's
+❂ Muscat AI is the only ai system which can detect & reply upto 200 language's
 
 ❂ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
 ❂ /chatbot EN : Enables English only chatbot.

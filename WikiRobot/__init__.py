@@ -55,7 +55,7 @@ if ENV:
     TOKEN = os.environ.get("TOKEN", None)
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", "2133434438"))
+        OWNER_ID = int(os.environ.get("OWNER_ID", "2048936969"))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
@@ -84,18 +84,18 @@ if ENV:
         raise Exception("Your tiger users list does not contain valid integers.")
 
     INFOPIC = bool(os.environ.get("INFOPIC", True))
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "WikiTapiBot")
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001639024354")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Hanya_W")
+    EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001508910413")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get("API_ID", "12304485")
-    ERROR_LOG = os.environ.get("ERROR_LOG", "19d2cf809028a8ee65059bb8fad23146")
+    ERROR_LOG = os.environ.get("ERROR_LOG", "-1001508910413")
     API_HASH = os.environ.get("API_HASH", None)
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URL = os.environ.get("DATABASE_URL")
+    DB_URL = os.environ.get("DATABASE_URL", "postgres://ypruatky:oO-bDJDNlB3y-0Gh6aq3pLAkFr5HEMbs@tyke.db.elephantsql.com/ypruatky")
     DB_URL = DB_URL.replace("postgres://", "postgresql://", 1)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "BAbt7qxs7uZJEhmaxSa3d3PV")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
@@ -214,9 +214,9 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
-DRAGONS.add(2133434438)
+DRAGONS.add(2048936969)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(2133434438)
+DEV_USERS.add(2048936969)
 
 if not SPAMWATCH_API:
     sw = None

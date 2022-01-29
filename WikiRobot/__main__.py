@@ -465,7 +465,7 @@ def Wiki_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/WikiTapiGroup"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/virtcirclee"),
                     InlineKeyboardButton(text="Updates", url="https://t.me/WikiTapiChannel"),
                  ],
                  [

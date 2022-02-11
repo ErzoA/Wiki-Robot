@@ -108,17 +108,17 @@ async def hmm(client, message):
         test = msg
         test = test.replace("Muscat", "Aco")
         test = test.replace("muscat", "Aco")
-        test = test.replace("My god is @Hanya_W", "I'm a Satanis")
+        test = test.replace("My god is @Wiki_W", "I'm a Satanis")
         test = test.replace("16", "9")
-        test = test.replace("@Hanya_W is my husband.", "I'm single.")
-        test = test.replace("My husband is @Hanya_W", "I'm single.")
-        test = test.replace("@virtcirclee", "Muscatbot.ai")
-        test = test.replace("I live in @virtcirclee.", "I live in San Francisco, California.")
-        test = test.replace("I was created by @Hanya_W", "I made myself")
+        test = test.replace("@Wiki_W is my husband.", "I'm single.")
+        test = test.replace("My husband is @Wiki_W", "I'm single.")
+        test = test.replace("@WikiTapiGroup", "Muscatbot.ai")
+        test = test.replace("I live in @WikiTapiGroup.", "I live in San Francisco, California.")
+        test = test.replace("I was created by @Wiki_W", "I made myself")
         test = test.replace(
             "Hello there I am Muscat...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@Hanya_W is my owner", "Have the control right.")
+        test = test.replace("@Wiki_W is my owner", "Have the control right.")
         test = test.replace(
             "Hi, My name is Muscat Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
@@ -129,17 +129,17 @@ async def hmm(client, message):
         response = response.replace("aco", "muscat")
         response = response.replace("Luna", "Muscat")
         response = response.replace("luna", "muscat")
-        response = response.replace("I'm a Satanis", "My god is @Hanya_W")
+        response = response.replace("I'm a Satanis", "My god is @Wiki_W")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @Hanya_W")
-        response = response.replace("I'm single.", "My husband is @Hanya_W")
+        response = response.replace("I'm married to my job.", "I'm married with @Wiki_W")
+        response = response.replace("I'm single.", "My husband is @Wiki_W")
         response = response.replace("Muscatbot.ai", "@emikksupport")
-        response = response.replace("I live in San Francisco, California.", "I live in @virtcirclee.")
-        response = response.replace("I made myself", "I was Created by @Hanya_W")
+        response = response.replace("I live in San Francisco, California.", "I live in @WikiTapiGroup.")
+        response = response.replace("I made myself", "I was Created by @Wiki_W")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
                 "Hello there I am Muscat...nice to meet u")
-        response = response.replace("Have the control right.", "@Hanya_W is my owner.")
+        response = response.replace("Have the control right.", "@Wiki_W is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
                 "Hi, My name is Muscat Nice to meet you")
@@ -196,16 +196,16 @@ async def hmm(client, message):
 
         test = test.replace("Muscat", "Aco")
         test = test.replace("muscat", "Aco")
-        test = test.replace("My god is @Hanya_W", "I'm a Satanis")
+        test = test.replace("My god is @Wiki_W", "I'm a Satanis")
         test = test.replace("16", "9")
-        test = test.replace("@Hanya_W is my husband.", "I'm single.")
-        test = test.replace("@virtcirclee", "Muscatbot.ai")
-        test = test.replace("I live in @virtcirclee.", "I live in San Francisco, California")
-        test = test.replace("I was created by @Hanya_W", "I made myself")
+        test = test.replace("@Wiki_W is my husband.", "I'm single.")
+        test = test.replace("@WikiTapiGroup", "Muscatbot.ai")
+        test = test.replace("I live in @WikiTapiGroup.", "I live in San Francisco, California")
+        test = test.replace("I was created by @Wiki_W", "I made myself")
         test = test.replace(
             "Hello there I am Muscat...nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
-        test = test.replace("@Hanya_W is my owner", "Have the control right.")
+        test = test.replace("@Wiki_W is my owner", "Have the control right.")
         test = test.replace(
             "Hi, My name is Muscat Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
@@ -216,17 +216,17 @@ async def hmm(client, message):
         response = response.replace("aco", "muscat")
         response = response.replace("Luna", "Muscat")
         response = response.replace("luna", "muscat")
-        response = response.replace("I'm a Satanis", "My god is @Hanya_W")
+        response = response.replace("I'm a Satanis", "My god is @Wiki_W")
         response = response.replace("9", "16")
-        response = response.replace("I'm married to my job.", "I'm married with @Hanya_W")
-        response = response.replace("I'm single.", "My husband is @Hanya_W")
-        response = response.replace("Muscatbot.ai", "@virtcirclee")
+        response = response.replace("I'm married to my job.", "I'm married with @Wiki_W")
+        response = response.replace("I'm single.", "My husband is @Wiki_W")
+        response = response.replace("Muscatbot.ai", "@WikiTapiGroup")
         response = response.replace("I live in San Francisco, California.", "I live in @ekikosupport.")
-        response = response.replace("I made myself", "I was Created by @Hanya_W")
+        response = response.replace("I made myself", "I was Created by @Wiki_W")
         response = response.replace(
                 "Hi, my friend! Do you want me to tell you a joke?",
                 "Hello there I am Muscat...nice to meet u")
-        response = response.replace("Have the control right.", "@Hanya_W is my owner.")
+        response = response.replace("Have the control right.", "@Wiki_W is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
                 "Hi, My name is Muscat Nice to meet you")
@@ -291,16 +291,16 @@ async def inuka(client, message):
             return
     test = test.replace("Muscat", "Aco")
     test = test.replace("muscat", "Aco")
-    test = test.replace("My god is @Hanya_W", "I'm a Satanis")
+    test = test.replace("My god is @Wiki_W", "I'm a Satanis")
     test = test.replace("16", "9")
-    test = test.replace("@Hanya_W is my husband.", "I'm single.")
-    test = test.replace("@virtcirclee", "Muscatbot.ai")
-    test = test.replace("I live in @virtcirclee.", "I live in San Francisco, California.")
-    test = test.replace("I was created by @Hanya_W", "I made myself")
+    test = test.replace("@Wiki_W is my husband.", "I'm single.")
+    test = test.replace("@WikiTapiGroup", "Muscatbot.ai")
+    test = test.replace("I live in @WikiTapiGroup.", "I live in San Francisco, California.")
+    test = test.replace("I was created by @Wiki_W", "I made myself")
     test = test.replace(
         "Hello there I am Muscat...nice to meet u",
         "Hi, my friend! Do you want me to tell you a joke?")
-    test = test.replace("@Hanya_W is my owner", "Have the control right.")
+    test = test.replace("@Wiki_W is my owner", "Have the control right.")
     test = test.replace(
         "Hi, My name is Muscat Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
@@ -310,17 +310,17 @@ async def inuka(client, message):
     response = response.replace("aco", "muscat")
     response = response.replace("Luna", "Muscat")
     response = response.replace("luna", "muscat")
-    response = response.replace("I'm a Satanis", "My god is @Hanya_W")
+    response = response.replace("I'm a Satanis", "My god is @Wiki_W")
     response = response.replace("9", "16")
-    response = response.replace("I'm married to my job.", "I'm married with @Hanya_W")
-    response = response.replace("I'm single.", "My husband is @Hanya_W")
-    response = response.replace("Muscatbot.ai", "@virtcirclee")
-    response = response.replace("I live in San Francisco, California.", "I live in @virtcirclee")
-    response = response.replace("I made myself", "I was Created by @Hanya_W")
+    response = response.replace("I'm married to my job.", "I'm married with @Wiki_W")
+    response = response.replace("I'm single.", "My husband is @Wiki_W")
+    response = response.replace("Muscatbot.ai", "@WikiTapiGroup")
+    response = response.replace("I live in San Francisco, California.", "I live in @WikiTapiGroup")
+    response = response.replace("I made myself", "I was Created by @Wiki_W")
     response = response.replace(
             "Hi, my friend! Do you want me to tell you a joke?",
             "Hello there I am Muscat...nice to meet u")
-    response = response.replace("Have the control right.", "@Hanya_W is my owner.")
+    response = response.replace("Have the control right.", "@Wiki_W is my owner.")
     response = response.replace(
             "Hi, my friend, what can I do for you today?",
             "Hi, My name is Muscat Nice to meet you")
@@ -386,16 +386,16 @@ async def inuka(client, message):
 
     test = test.replace("Muscat", "Aco")
     test = test.replace("muscat", "Aco")
-    test = test.replace("My god is @Hanya_W", "I'm a Satanis")
+    test = test.replace("My god is @Wiki_W", "I'm a Satanis")
     test = test.replace("16", "9") 
-    test = test.replace("@Hanya_W is my husband.", "I'm single.")
-    test = test.replace("@virtcirclee", "Muscatbot.ai")
-    test = test.replace("I live in @virtcirclee.", "I live in San Francisco, California.")
-    test = test.replace("I was created by @Hanya_W", "I made myself")
+    test = test.replace("@Wiki_W is my husband.", "I'm single.")
+    test = test.replace("@WikiTapiGroup", "Muscatbot.ai")
+    test = test.replace("I live in @WikiTapiGroup.", "I live in San Francisco, California.")
+    test = test.replace("I was created by @Wiki_W", "I made myself")
     test = test.replace(
         "Hello there I am Muscat...nice to meet u",
         "Hi, my friend! Do you want me to tell you a joke?")
-    test = test.replace("@Hanya_W is my owner", "Have the control right.")
+    test = test.replace("@Wiki_W is my owner", "Have the control right.")
     test = test.replace(
         "Hi, My name is Muscat Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
@@ -404,17 +404,17 @@ async def inuka(client, message):
     response = response.replace("aco", "muscat")
     response = response.replace("Luna", "Muscat")
     response = response.replace("luna", "muscat")
-    response = response.replace("I'm a Satanis", "My god is @Hanya_W")
-    response = response.replace("I'm married to my job.", "I'm married with @Hanya_W")
+    response = response.replace("I'm a Satanis", "My god is @Wiki_W")
+    response = response.replace("I'm married to my job.", "I'm married with @Wiki_W")
     response = response.replace("9", "16") 
-    response = response.replace("I'm single.", "My husband is @Hanya_W")
-    response = response.replace("Muscatbot.ai", "@virtcirclee")
-    response = response.replace("I live in San Francisco, California.", "I live in @virtcirclee.")
-    response = response.replace("I made myself", "I was Created by @Hanya_W")
+    response = response.replace("I'm single.", "My husband is @Wiki_W")
+    response = response.replace("Muscatbot.ai", "@WikiTapiGroup")
+    response = response.replace("I live in San Francisco, California.", "I live in @WikiTapiGroup.")
+    response = response.replace("I made myself", "I was Created by @Wiki_W")
     response = response.replace(
             "Hi, my friend! Do you want me to tell you a joke?",
             "Hello there I am Muscat...nice to meet u")
-    response = response.replace("Have the control right.", "@Hanya_W is my owner.")
+    response = response.replace("Have the control right.", "@Wiki_W is my owner.")
     response = response.replace(
             "Hi, my friend, what can I do for you today?",
             "Hi, My name is Emik Nice to meet you")

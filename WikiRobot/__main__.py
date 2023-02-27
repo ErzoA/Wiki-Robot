@@ -395,7 +395,7 @@ def Wiki_about_callback(update, context):
             ),
         )
         
-     elif query.data == "Wiki_music":
+    elif query.data == "Wiki_music":
         query.message.edit_text(
             text="*๏Perintah Bot Music+Streaming*"
             "\nKlik di bawah ini untuk lebih jelas perintah Bot Music+Streaming.",

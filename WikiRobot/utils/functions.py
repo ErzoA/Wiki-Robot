@@ -36,6 +36,7 @@ from WikiRobot import aiohttpsession as aiosession
 from WikiRobot.w_plugins.dbfunctions import start_restart_stage
 from WikiRobot.utils.http import get, post
 
+
 async def restart(m: Message):
     if m:
         await start_restart_stage(m.chat.id, m.message_id)
@@ -89,7 +90,7 @@ def generate_captcha():
 
 def test_speedtest():
     def speed_convert(size):
-        power = 2 ** 10
+        power = 2**10
         zero = 0
         units = {0: "", 1: "Kb/s", 2: "Mb/s", 3: "Gb/s", 4: "Tb/s"}
         while size > power:

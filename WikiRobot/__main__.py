@@ -360,7 +360,7 @@ def help_button(update, context):
         pass
 
 
-def emiko_about_callback(update, context):
+def Wiki_about_callback(update, context):
     query = update.callback_query
     if query.data == "Wiki_":
         query.message.edit_text(
@@ -430,8 +430,6 @@ def emiko_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-
-    elif query.data == "Wiki_admin":
 
     elif query.data == "Wiki_admin":
         query.message.edit_text(
